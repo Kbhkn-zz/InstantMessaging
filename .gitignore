@@ -1,19 +1,7 @@
 ### IntelliJ IDEA ###
+target/
 .idea/
 .mvn/
-*.iws
-*.iml
-*.ipr
-target/
 mvnw
 mvnw.cmd
-*.iws
-/out/
-.idea_modules/
-atlassian-ide-plugin.xml
-.idea/replstate.xml
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-.idea/sonarlint
+*.iml
