@@ -1,6 +1,5 @@
 package com.instantmessaging.dto;
 
-
 public class UserMessageDto {
     private String senderPhone;
     private String receiverPhone;

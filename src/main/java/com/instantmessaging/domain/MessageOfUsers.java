@@ -17,11 +17,11 @@ public class MessageOfUsers implements Serializable {
     private String senderMessage;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="sender_user_id")
+    @JoinColumn(name = "sender_user_id")
     private User senderUser;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="receiver_user_id")
+    @JoinColumn(name = "receiver_user_id")
     private User receiverUser;
 
     public MessageOfUsers() {
@@ -70,8 +70,8 @@ public class MessageOfUsers implements Serializable {
         final StringBuffer sb = new StringBuffer("MessageOfUsers{");
         sb.append("id=").append(id);
         sb.append(", senderMessage='").append(senderMessage).append('\'');
-        sb.append(", senderUser=").append(senderUser.getPhoneNumber()+'\'');
-        sb.append(", receiverUser=").append(receiverUser.getPhoneNumber()+'\'');
+        sb.append(", senderUser=").append(senderUser.getPhoneNumber() + '\'');
+        sb.append(", receiverUser=").append(receiverUser.getPhoneNumber() + '\'');
         sb.append('}');
         return sb.toString();
     }
